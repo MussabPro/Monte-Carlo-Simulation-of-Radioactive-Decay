@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Monte Carlo Simulation of Radioactive Particle Decay"
+version: 1.0.0
+authors:
+  - family-names: Omair
+    given-names: Mussab
+    affiliation: University of Gujrat
+    email: me@mussab.tech
+date-released: 2026-02-21
+license: MIT
+repository-code: https://github.com/MussabPro/Monte-Carlo-Simulation-of-Radioactive-Decay
+keywords:
+  - monte-carlo
+  - particle-physics
+  - radioactive-decay
+  - simulation
