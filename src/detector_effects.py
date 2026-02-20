@@ -18,17 +18,14 @@ Example:
     >>> detected = apply_detector_efficiency(times, efficiency=0.85)
     >>> print(f"Detected {len(detected)} / {len(times)} events")
 """
-
+# isort: skip_file
 from src.basic_simulation import _validate_positive_float
+import numpy as np
+from typing import Optional
 import logging
 import sys
 from pathlib import Path
-from typing import Optional
 
-import numpy as np
-
-# Ensure the project root is on sys.path so the module works both when
-# imported from the root and when run directly (python src/…).
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 

@@ -11,17 +11,15 @@ Usage:
     python -m animations.realtime_interactive
     python animations/realtime_interactive.py
 """
-
+# isort: skip_file
+from config import AnimationConfig, PathConfig, SimulationConfig
 import numpy as np
 from typing import Optional
 from datetime import datetime
 import logging
-from config import AnimationConfig, PathConfig, SimulationConfig
 import sys
 from pathlib import Path
 
-# Ensure the project root is on sys.path for both direct execution
-# (python animations/realtime_interactive.py) and package imports.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 

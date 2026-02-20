@@ -10,24 +10,20 @@ saved to ``results/plots/`` and timing information is printed.
 Usage:
     python examples/run_full_analysis.py
 """
+import time
 
+import numpy as np
+
+from config import PathConfig, SimulationConfig
+from src.basic_simulation import generate_decay_times, run_basic_simulation
+from src.detector_effects import apply_all_detector_effects
+from src.statistics import compare_to_theory
 from src.visualization import (
     plot_decay_curve,
     plot_decay_histogram,
     plot_detector_comparison,
     plot_parameter_scan,
 )
-from src.statistics import compare_to_theory
-from src.detector_effects import apply_all_detector_effects
-from src.basic_simulation import generate_decay_times, run_basic_simulation
-from config import PathConfig, SimulationConfig
-import sys
-import time
-from pathlib import Path
-
-import numpy as np
-
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 
 plots_dir = PathConfig.PLOTS_DIR

@@ -12,21 +12,18 @@ Example:
     >>> times = np.random.exponential(10.0, size=5000)
     >>> mean, std, err = calculate_mean_lifetime(times)
 """
-
+# isort: skip_file
 from src.basic_simulation import (
     _validate_positive_float,
     _validate_positive_integer,
 )
+from scipy import stats as sp_stats
+import numpy as np
+from typing import Any, Dict, Optional, Tuple
 import logging
 import sys
 from pathlib import Path
-from typing import Any, Dict, Optional, Tuple
 
-import numpy as np
-from scipy import stats as sp_stats
-
-# Ensure the project root is on sys.path so the module works both when
-# imported from the root and when run directly (python src/…).
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 

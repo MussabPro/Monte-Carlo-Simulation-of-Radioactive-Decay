@@ -9,7 +9,8 @@ Usage:
     python -m animations.grid_2d_animation
     python animations/grid_2d_animation.py --n-particles 500 --fps 15
 """
-
+# isort: skip_file
+from config import AnimationConfig, PathConfig, PlotConfig, SimulationConfig
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
@@ -17,12 +18,9 @@ from typing import List, Optional
 from datetime import datetime
 import logging
 import argparse
-from config import AnimationConfig, PathConfig, PlotConfig, SimulationConfig
 import sys
 from pathlib import Path
 
-# Ensure the project root is on sys.path for both direct execution
-# (python animations/grid_2d_animation.py) and package imports.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 

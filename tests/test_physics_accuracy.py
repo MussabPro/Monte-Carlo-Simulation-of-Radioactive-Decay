@@ -4,7 +4,7 @@ Physics accuracy tests.
 Verifies that simulation results match theoretical predictions for
 exponential decay within acceptable tolerances.
 """
-
+# isort: skip_file
 from src.statistics import calculate_mean_lifetime, chi_squared_test
 from src.multichannel_simulation import (
     analyze_channels,

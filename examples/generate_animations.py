@@ -10,15 +10,11 @@ Usage:
     python examples/generate_animations.py
     python examples/generate_animations.py --gif --n-particles 500
 """
-
-from animations.space_3d_animation import Space3DAnimation
-from animations.grid_2d_animation import Grid2DAnimation
 import argparse
 import logging
-import sys
-from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from animations.grid_2d_animation import Grid2DAnimation
+from animations.space_3d_animation import Space3DAnimation
 
 
 def main() -> None:

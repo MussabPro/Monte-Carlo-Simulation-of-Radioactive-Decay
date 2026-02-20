@@ -1,0 +1,40 @@
+{
+  "system": {
+    "machine": "arm64",
+    "processor": "arm",
+    "os": "Darwin 25.3.0",
+    "python": "3.11.13",
+    "numpy": "2.3.2",
+    "timestamp": "2026-02-21T02:16:55"
+  },
+  "benchmarks": [
+    {
+      "n_particles": 1000,
+      "gen_time_s": 0.000171,
+      "full_time_s": 0.015636,
+      "gen_peak_mem": 9488,
+      "full_peak_mem": 55297
+    },
+    {
+      "n_particles": 10000,
+      "gen_time_s": 0.000107,
+      "full_time_s": 0.029511,
+      "gen_peak_mem": 81232,
+      "full_peak_mem": 421908
+    },
+    {
+      "n_particles": 100000,
+      "gen_time_s": 0.000478,
+      "full_time_s": 0.179988,
+      "gen_peak_mem": 801232,
+      "full_peak_mem": 3205901
+    },
+    {
+      "n_particles": 1000000,
+      "gen_time_s": 0.004375,
+      "full_time_s": 2.181249,
+      "gen_peak_mem": 8001232,
+      "full_peak_mem": 32005849
+    }
+  ]
+}

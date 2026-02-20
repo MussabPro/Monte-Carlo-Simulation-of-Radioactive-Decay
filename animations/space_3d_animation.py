@@ -9,7 +9,8 @@ Usage:
     python -m animations.space_3d_animation
     python animations/space_3d_animation.py --n-particles 800 --fps 15
 """
-
+# isort: skip_file
+from config import AnimationConfig, PathConfig, PlotConfig, SimulationConfig
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
@@ -17,12 +18,9 @@ from typing import List, Optional, Tuple
 from datetime import datetime
 import logging
 import argparse
-from config import AnimationConfig, PathConfig, PlotConfig, SimulationConfig
 import sys
 from pathlib import Path
 
-# Ensure the project root is on sys.path for both direct execution
-# (python animations/space_3d_animation.py) and package imports.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 

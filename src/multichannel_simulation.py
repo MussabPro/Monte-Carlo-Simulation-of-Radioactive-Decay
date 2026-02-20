@@ -17,21 +17,18 @@ Example:
     >>> data = generate_multichannel_decay(10000, 0.1, ratios, random_seed=42)
     >>> print(data["channels"][:5])
 """
-
+# isort: skip_file
 from src.basic_simulation import (
     _validate_positive_float,
     _validate_positive_integer,
     generate_decay_times,
 )
+import numpy as np
+from typing import Any, Dict, List, Optional
 import logging
 import sys
 from pathlib import Path
-from typing import Any, Dict, List, Optional
 
-import numpy as np
-
-# Ensure the project root is on sys.path so the module works both when
-# imported from the root and when run directly (python src/…).
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 

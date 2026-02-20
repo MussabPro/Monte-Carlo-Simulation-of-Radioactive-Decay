@@ -4,7 +4,7 @@ Tests for the basic decay simulation module.
 Covers decay-time generation, theoretical curves, input validation,
 and reproducibility with fixed seeds.
 """
-
+# isort: skip_file
 from src.basic_simulation import (
     calculate_theoretical_curve,
     calculate_theoretical_pdf,

@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "monte-carlo-decay"
+version = "0.1.0"
+requires-python = ">=3.9"
+
+[tool.setuptools]
+py-modules = ["config"]
+packages   = ["src", "animations"]
+
+[tool.isort]
+known_first_party = ["src", "config", "animations"]
+profile = "black"
+
+[tool.ruff.lint.isort]
+known-first-party = ["src", "config", "animations"]

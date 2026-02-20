@@ -9,15 +9,10 @@ Usage:
     python examples/run_basic.py
 """
 
-from src.visualization import plot_decay_histogram
-from src.statistics import calculate_mean_lifetime
-from src.basic_simulation import run_basic_simulation
 from config import PathConfig
-import sys
-from pathlib import Path
-
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-
+from src.basic_simulation import run_basic_simulation
+from src.statistics import calculate_mean_lifetime
+from src.visualization import plot_decay_histogram
 
 # Run simulation with 1 000 particles
 results = run_basic_simulation(

@@ -4,7 +4,7 @@ Tests for the statistics module.
 Covers mean-lifetime calculation, χ² goodness-of-fit,
 bootstrap uncertainties, and the combined theory comparison.
 """
-
+# isort: skip_file
 from src.statistics import (
     bootstrap_uncertainty,
     calculate_mean_lifetime,

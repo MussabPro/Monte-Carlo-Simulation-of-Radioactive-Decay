@@ -8,14 +8,9 @@ channels, prints per-channel statistics, and saves a comparison plot.
 Usage:
     python examples/run_multichannel.py
 """
-
-from src.visualization import plot_multichannel_comparison
-from src.multichannel_simulation import run_multichannel_simulation
 from config import PathConfig
-import sys
-from pathlib import Path
-
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from src.multichannel_simulation import run_multichannel_simulation
+from src.visualization import plot_multichannel_comparison
 
 
 # Define branching ratios (B-meson inspired)
